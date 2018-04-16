@@ -13,8 +13,6 @@
 # limitations under the License.
 
 LOCAL_PATH := $(call my-dir)
-
-ifeq ($(call is-vendor-board-platform,QCOM),true)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE_RELATIVE_PATH := hw
@@ -49,4 +47,3 @@ LOCAL_SHARED_LIBRARIES := \
     android.hardware.power@1.1 \
 
 include $(BUILD_EXECUTABLE)
-endif
